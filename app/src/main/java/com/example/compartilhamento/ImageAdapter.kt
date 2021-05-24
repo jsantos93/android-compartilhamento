@@ -23,7 +23,7 @@ class ImageAdapter(private var img_list: List<ImageCard>, private var listener: 
         val currentItem = img_list[position]
 
 //        holder.imgUriView?.setImageDrawable(currentItem.img_uri)
-        holder.imgUriView?.setImageResource(currentItem.img_uri)
+        holder.imgUriView?.setImageURI(currentItem.img_uri)
         holder.imgTextView?.text = currentItem.img_title
     }
 
